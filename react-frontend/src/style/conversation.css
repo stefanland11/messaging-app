@@ -1,0 +1,96 @@
+.conversation {
+    grid-area: conversation;
+    background-color: #3f3f45;
+    padding: 0 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conversation h2 {
+    position: sticky;
+    top: 0;    
+    background-color: #3f3f45; 
+    z-index: 1;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #555; 
+  }
+  
+  .conversationsList {
+    cursor: "pointer";
+    border: "1px solid #ccc";
+    padding: "10px";
+    margin: "5px 0";
+  }
+  
+  .sender {
+    align-self: flex-end;
+    background-color: #0ee323;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1rem 0;
+    max-width: 60%;
+    width: fit-content;
+    word-wrap: break-word;
+    margin-left: auto;
+  }
+  
+  .recipient {
+    align-self: flex-start;
+    background-color: #28292e;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 60%;
+    width: fit-content;
+    word-wrap: break-word;
+    margin-right: auto;
+  }
+
+  .new-message {
+    position: sticky;
+    bottom: 0;
+    background-color: #3f3f45;
+    z-index: 1;
+    padding: 10px;
+    margin: 0;
+    border-top: 1px solid #555;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .new-message input {
+    flex-grow: 1; /* Allows the input to fill available space */
+    max-width: calc(100% - 50px); /* Leaves space for the button */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none; /* Prevents resizing from corners */
+    min-height: 40px; /* Ensures a base height */
+    overflow-y: auto; /* Allows vertical scrolling if needed */
+    background-color: #28292e;
+    color: white;
+  }
+  
+  .new-message button {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px; /* Ensures the button matches the input height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Aligns perfectly with the input */
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-message button img {
+    width: 20px; /* Keeps the send icon proportionate */
+    height: 20px;
+  }
